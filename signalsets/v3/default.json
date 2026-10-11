@@ -181,7 +181,7 @@
   ]},
 { "hdr": "6A8", "rax": "688", "fcm1": true, "dbg": true, "cmd": {"22": "D421"}, "freq": 1,
   "signals": [
-    {"id": "Fiat_AC_P", "path": "Engine", "fmt": { "len": 16, "max": 65.53, "div": 1000, "unit": "bars" }, "name": "Air conditioning pressure"}
+    {"id": "Fiat_AC_P_V2", "path": "Engine", "fmt": { "len": 16, "max": 65.53, "div": 1000, "unit": "bars" }, "name": "Air conditioning pressure"}
   ]},
 { "hdr": "6A8", "rax": "688", "fcm1": true, "dbg": true, "cmd": {"22": "D422"}, "freq": 5,
   "signals": [
@@ -209,7 +209,7 @@
   ]},
 { "hdr": "6A8", "rax": "688", "fcm1": true, "dbg": true, "cmd": {"22": "D42A"}, "freq": 5,
   "signals": [
-    {"id": "Fiat_FUEL_T", "path": "Fuel", "fmt": { "len": 16, "max": 6280, "min": -273, "div": 10, "add": -273.14, "unit": "celsius" }, "name": "Fuel temperature"}
+    {"id": "Fiat_FUEL_T_V2", "path": "Fuel", "fmt": { "len": 16, "max": 6280, "min": -273, "div": 10, "add": -273.14, "unit": "celsius" }, "name": "Fuel temperature"}
   ]},
 { "hdr": "6A8", "rax": "688", "fcm1": true, "dbg": true, "cmd": {"22": "D42F"}, "freq": 1,
   "signals": [
@@ -1030,8 +1030,8 @@
   ]},
 { "hdr": "6A9", "rax": "689", "fcm1": true, "din": "03", "dbg": true, "cmd": {"21": "C3"}, "freq": 0.25,
   "signals": [
-    {"id": "Fiat_ACCEL_PEDAL_POS_V3", "path": "Movement", "fmt": {"bix": 88,  "len": 8, "max": 99.45,              "mul": 39, "div": 100,              "unit": "percent"      }, "name": "Accelerator pedal position"},
-    {"id": "Fiat_ENG_TQ",             "path": "Engine",   "fmt": {"bix": 112, "len": 8, "max": 410,   "min": -100, "mul": 2,              "add": -100, "unit": "newtonMeters" }, "name": "Engine torque"}
+    {"id": "Fiat_ACCEL_PEDAL_POS_6A9", "path": "Movement", "fmt": {"bix": 88,  "len": 8, "max": 99.45,              "mul": 39, "div": 100,              "unit": "percent"      }, "name": "Accelerator pedal position"},
+    {"id": "Fiat_ENG_TQ",              "path": "Engine",   "fmt": {"bix": 112, "len": 8, "max": 410,   "min": -100, "mul": 2,              "add": -100, "unit": "newtonMeters" }, "name": "Engine torque"}
   ]},
 { "hdr": "6A9", "rax": "689", "fcm1": true, "din": "03", "dbg": true, "cmd": {"21": "C5"}, "freq": 0.25,
   "signals": [
@@ -1039,11 +1039,11 @@
     {"id": "Fiat_INPUT_SHFT_SPD", "path": "Movement", "fmt": {"bix": 48,  "len": 8, "max": 8160,              "mul": 32,                        "unit": "rpm"     }, "name": "Input shaft speed"},
     {"id": "Fiat_CMD_OIL_P",      "path": "Engine",   "fmt": {"bix": 128, "len": 8, "max": 25.5,                         "div": 10,             "unit": "bars"    }, "name": "Commanded oil pressure"},
     {"id": "Fiat_ACT_OIL_P",      "path": "Engine",   "fmt": {"bix": 144, "len": 8, "max": 12.75,                        "div": 20,             "unit": "bars"    }, "name": "Actual oil pressure"},
-    {"id": "Fiat_ATF_T_V3",       "path": "Engine",   "fmt": {"bix": 168, "len": 8, "max": 205,   "min": -50,                       "add": -50, "unit": "celsius" }, "name": "Transmission fluid temperature", "suggestedMetric": "transmissionFluidTemperature"}
+    {"id": "Fiat_ATF_T_V4",       "path": "Engine",   "fmt": {"bix": 168, "len": 8, "max": 205,   "min": -50,                       "add": -50, "unit": "celsius" }, "name": "Transmission fluid temperature", "suggestedMetric": "transmissionFluidTemperature"}
   ]},
 { "hdr": "6A9", "rax": "689", "fcm1": true, "din": "03", "dbg": true, "cmd": {"21": "C8"}, "freq": 0.25,
   "signals": [
-    {"id": "Fiat_VSS_V2", "path": "Movement", "fmt": {"bix": 96, "len": 16, "max": 655, "div": 100, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed"}
+    {"id": "Fiat_VSS_6A9", "path": "Movement", "fmt": {"bix": 96, "len": 16, "max": 655, "div": 100, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed"}
   ]},
 { "hdr": "6A9", "rax": "689", "fcm1": true, "dbg": true, "cmd": {"22": "D405"}, "freq": 1,
   "signals": [
@@ -1075,7 +1075,7 @@
   ]},
 { "hdr": "6A9", "rax": "689", "fcm1": true, "dbg": true, "cmd": {"22": "D505"}, "freq": 0.25,
   "signals": [
-    {"id": "Fiat_ACCEL_PEDAL_POS_6A9", "path": "Movement", "fmt": { "len": 8, "max": 127, "div": 2, "unit": "percent" }, "name": "Accelerator pedal position"}
+    {"id": "Fiat_ACCEL_PEDAL_POS_6A9_6A9", "path": "Movement", "fmt": { "len": 8, "max": 127, "div": 2, "unit": "percent" }, "name": "Accelerator pedal position"}
   ]},
 { "hdr": "6A9", "rax": "689", "fcm1": true, "dbg": true, "cmd": {"22": "D506"}, "freq": 0.25,
   "signals": [
@@ -1387,7 +1387,7 @@
   ]},
 { "hdr": "6A9", "rax": "689", "fcm1": true, "dbg": true, "cmd": {"22": "D711"}, "freq": 0.25,
   "signals": [
-    {"id": "Fiat_VSS_6A9", "path": "Movement", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed"}
+    {"id": "Fiat_VSS_6A9_6A9", "path": "Movement", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed"}
   ]},
 { "hdr": "6A9", "rax": "689", "fcm1": true, "dbg": true, "cmd": {"22": "D730"}, "freq": 1,
   "signals": [
@@ -2485,7 +2485,7 @@
 { "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "04FE"}, "freq": 5,
   "signals": [
     {"id": "Fiat_TRANS_T_VAR_2_V2", "path": "Transmission", "fmt": { "len": 8, "max": 419, "min": -40, "mul": 9,   "div": 5, "add": -40, "unit": "fahrenheit" }, "name": "Transmission temperature, variant 2"},
-    {"id": "Fiat_ATF_T",            "path": "Transmission", "fmt": { "len": 8, "max": 300, "min": -30, "mul": 1.8,           "add": -40, "unit": "fahrenheit" }, "name": "Transmission temperature",            "suggestedMetric": "transmissionFluidTemperature"},
+    {"id": "Fiat_ATF_T_V3",         "path": "Transmission", "fmt": { "len": 8, "max": 300, "min": -30, "mul": 1.8,           "add": -40, "unit": "fahrenheit" }, "name": "Transmission temperature",            "suggestedMetric": "transmissionFluidTemperature"},
     {"id": "Fiat_ATF_T_2",          "path": "Transmission", "fmt": { "len": 8, "max": 300, "min": -30, "mul": 1.8,           "add": -40, "unit": "fahrenheit" }, "name": "Transmission temperature"}
   ]},
 { "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "08DF"}, "freq": 5,
@@ -2508,7 +2508,7 @@
 { "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"22": "5503"}, "freq": 0.25,
   "signals": [
     {"id": "Fiat_CURRENT_GEAR_RAW_CNT", "path": "Transmission", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Current gear, raw count"},
-    {"id": "Fiat_GEAR", "path": "Transmission", "name": "Current gear", "description": "The automatic transmission gear.", "fmt": {"bix": 4, "len": 4, "map": {
+    {"id": "Fiat_GEAR_V2", "path": "Transmission", "name": "Current gear", "description": "The automatic transmission gear.", "fmt": {"bix": 4, "len": 4, "map": {
           "0":  { "description": "Neutral",      "value": "NEUTRAL" },
           "1":  { "description": "First gear",   "value": "1" },
           "2":  { "description": "Second gear",  "value": "2" },
@@ -2558,7 +2558,7 @@
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "1003"}, "freq": 5,
   "signals": [
-    {"id": "Fiat_ECT_ECU", "path": "Engine", "fmt": { "len": 16, "max": 200, "min": -40, "mul": 2, "div": 100, "add": -40, "unit": "celsius" }, "name": "Coolant temperature"}
+    {"id": "Fiat_ECT_ECU", "path": "Engine", "fmt": { "len": 16, "max": 200, "min": -40, "mul": 2, "div": 100, "add": -40, "unit": "celsius" }, "name": "Coolant temperature", "suggestedMetric": "engineCoolantTemperature"}
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "1009"}, "freq": 3600,
   "signals": [
@@ -2570,19 +2570,23 @@
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "189F"}, "freq": 2,
   "signals": [
-    {"id": "Fiat_VGT_CMD", "path": "Engine", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 65535, "unit": "percent" }, "name": "VGT position commanded"}
+    {"id": "Fiat_VGT_CMD", "path": "Engine", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 65535, "unit": "percent" }, "name": "Variable geometry turbo position commanded"}
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "18A0"}, "freq": 2,
   "signals": [
-    {"id": "Fiat_VGT_ACT", "path": "Engine", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 65535, "unit": "percent" }, "name": "VGT position actual"}
+    {"id": "Fiat_VGT_ACT", "path": "Engine", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 65535, "unit": "percent" }, "name": "Variable geometry turbo position actual"}
   ]},
 { "hdr": "DA10", "rax": "10", "fcm1": true, "din": "03", "dbg": true, "cmd": {"22": "18A4"}, "freq": 3600,
   "signals": [
-    {"id": "Fiat_REGEN_TOTAL", "path": "Emissions", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Total DPF regenerations started"}
+    {"id": "Fiat_REGEN_STARTED_TOT", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Regenerations started total counter"}
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "18A5"}, "freq": 60,
   "signals": [
-    {"id": "Fiat_REGEN_INTERRUPTED", "path": "Emissions", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "DPF regen interrupted count"}
+    {"id": "Fiat_REGEN_INTERRUPTED", "path": "Emissions", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Particulate filter regen interrupted count"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "18AE"}, "freq": 3600,
+  "signals": [
+    {"id": "Fiat_REGEN_CONSEC_INTERRUPTED", "path": "Emissions", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Consecutive interrupted particulate filter regenerations"}
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "18D0"}, "freq": 1,
   "signals": [
@@ -2590,15 +2594,15 @@
   ]},
 { "hdr": "DA10", "rax": "10", "fcm1": true, "din": "03", "dbg": true, "cmd": {"22": "18DE"}, "freq": 5,
   "signals": [
-    {"id": "Fiat_DPF_INLET_T", "path": "Emissions", "fmt": { "len": 16, "max": 900, "min": -40, "mul": 2, "div": 100, "add": -40, "unit": "celsius" }, "name": "DPF inlet temperature"}
+    {"id": "Fiat_DPF_INLET_T", "path": "Emissions", "fmt": { "len": 16, "max": 900, "min": -40, "mul": 2, "div": 100, "add": -40, "unit": "celsius" }, "name": "Particulate filter inlet temperature"}
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "18E2"}, "freq": 5,
   "signals": [
-    {"id": "Fiat_DPF_DIFF_PRESS", "path": "Emissions", "fmt": { "len": 16, "max": 50, "min": -50, "div": 10, "add": -3276.8, "unit": "kilopascal" }, "name": "DPF differential pressure"}
+    {"id": "Fiat_DPF_DIFF_PRESS", "path": "Emissions", "fmt": { "len": 16, "max": 50, "min": -50, "div": 10, "add": -3276.8, "unit": "kilopascal" }, "name": "Particulate filter differential pressure"}
   ]},
 { "hdr": "DA10", "rax": "10", "fcm1": true, "din": "03", "dbg": true, "cmd": {"22": "18E4"}, "freq": 30,
   "signals": [
-    {"id": "Fiat_DPF_SOOT_PCT", "path": "Emissions", "fmt": { "len": 16, "max": 100, "mul": 1000, "div": 65535, "unit": "percent" }, "name": "DPF soot clogging level"}
+    {"id": "Fiat_DPF_SOOT_PCT", "path": "Emissions", "fmt": { "len": 16, "max": 100, "mul": 1000, "div": 65535, "unit": "percent" }, "name": "Particulate filter soot clogging level"}
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "18E8"}, "freq": 5,
   "signals": [
@@ -2615,19 +2619,28 @@
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "1900"}, "freq": 5,
   "signals": [
-    {"id": "Fiat_FUEL_TEMP", "path": "Engine", "fmt": { "len": 16, "max": 200, "min": -40, "mul": 2, "div": 100, "add": -40, "unit": "celsius" }, "name": "Diesel fuel temperature"}
+    {"id": "Fiat_FUEL_T",    "path": "Fuel",   "fmt": { "len": 16, "max": 615, "min": -695,           "div": 50,  "add": -40, "sign": true, "unit": "celsius" }, "name": "Fuel temperature"},
+    {"id": "Fiat_FUEL_TEMP", "path": "Engine", "fmt": { "len": 16, "max": 200, "min": -40,  "mul": 2, "div": 100, "add": -40,               "unit": "celsius" }, "name": "Diesel fuel temperature"}
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "190B"}, "freq": 0.25,
   "signals": [
-    {"id": "Fiat_VSS_ECU", "path": "Movement", "fmt": { "len": 16, "max": 300, "unit": "kilometersPerHour" }, "name": "Vehicle speed, engine computer", "suggestedMetric": "speed"}
+    {"id": "Fiat_VSS_ECU", "path": "Movement", "fmt": { "len": 16, "max": 300, "unit": "kilometersPerHour" }, "name": "Vehicle speed, engine module", "suggestedMetric": "speed"}
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "192D"}, "freq": 1,
   "signals": [
     {"id": "Fiat_GEAR_ECU", "path": "Transmission", "fmt": { "len": 8, "max": 9, "unit": "scalar" }, "name": "Gear engaged"}
   ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "192F"}, "freq": 1,
+  "signals": [
+    {"id": "Fiat_AC_P", "path": "Engine", "fmt": { "len": 16, "max": 655350, "mul": 10, "unit": "unknown" }, "name": "Air conditioning pressure"}
+  ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "1935"}, "freq": 5,
   "signals": [
     {"id": "Fiat_IAT_TURBO", "path": "Engine", "fmt": { "len": 16, "max": 200, "min": -40, "mul": 2, "div": 100, "add": -40, "unit": "celsius" }, "name": "IAT post-intercooler"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "193A"}, "freq": 1,
+  "signals": [
+    {"id": "Fiat_TURBO_BOOST_ACTUATOR", "path": "Engine", "fmt": { "len": 8, "max": 99.22, "min": -100, "mul": 7813, "div": 10000, "sign": true, "unit": "percent" }, "name": "Turbo boost actuator duty"}
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "193F"}, "freq": 5,
   "signals": [
@@ -2641,6 +2654,10 @@
   "signals": [
     {"id": "Fiat_RAIL_PRESS", "path": "Engine", "fmt": { "len": 16, "max": 3000, "div": 20, "unit": "bars" }, "name": "Fuel rail pressure measured"}
   ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "1948"}, "freq": 1,
+  "signals": [
+    {"id": "Fiat_FUEL_RAMP_P_ADC", "path": "Fuel", "fmt": { "len": 16, "max": 6553, "div": 10, "unit": "millivolts" }, "name": "Fuel ramp pressure ADC"}
+  ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "194F"}, "freq": 30,
   "signals": [
     {"id": "Fiat_OIL_PUMP", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Variable oil pump position"}
@@ -2649,9 +2666,29 @@
   "signals": [
     {"id": "Fiat_BATT_V_ECU", "path": "Battery", "fmt": { "len": 16, "max": 20, "div": 2000, "unit": "volts" }, "name": "Battery voltage"}
   ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "1959"}, "freq": 1,
+  "signals": [
+    {"id": "Fiat_TURBO_BOOST_CMD", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "unknown" }, "name": "Turbo boost, commanded"}
+  ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "195A"}, "freq": 1,
   "signals": [
     {"id": "Fiat_BOOST", "path": "Engine", "fmt": { "len": 16, "max": 300, "min": -100, "div": 10, "add": -3276.8, "unit": "kilopascal" }, "name": "Turbo boost pressure"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "195B"}, "freq": 1,
+  "signals": [
+    {"id": "Fiat_TURBO_BOOST_ADC", "path": "Engine", "fmt": { "len": 16, "max": 6553, "div": 10, "unit": "millivolts" }, "name": "Turbo boost ADC"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "19BD"}, "freq": 1,
+  "signals": [
+    {"id": "Fiat_BAT_ST_CHG", "path": "Battery", "fmt": { "len": 8, "max": 255, "unit": "percent" }, "name": "Battery state of charge"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "2001"}, "freq": 30,
+  "signals": [
+    {"id": "Fiat_ODO_DA10", "path": "Trips", "fmt": { "len": 24, "max": 1677721, "div": 10, "unit": "kilometers" }, "name": "Odometer"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "2005"}, "freq": 0.25,
+  "signals": [
+    {"id": "Fiat_MAX_RPM_REACHED", "path": "Movement", "fmt": { "len": 8, "max": 5080, "min": -5120, "mul": 40, "sign": true, "unit": "celsius" }, "name": "Max RPM reached"}
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "3800"}, "freq": 2,
   "signals": [
@@ -2675,19 +2712,19 @@
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "3808"}, "freq": 3600,
   "signals": [
-    {"id": "Fiat_AVG_REGEN_TEMP", "path": "Emissions", "fmt": { "len": 16, "max": 900, "min": -40, "div": 50, "add": -40, "unit": "celsius" }, "name": "DPF regen temperature (last 5 average)"}
+    {"id": "Fiat_AVG_REGEN_TEMP", "path": "Emissions", "fmt": { "len": 16, "max": 900, "min": -40, "div": 50, "add": -40, "unit": "celsius" }, "name": "Particulate filter regen temperature, average of the last 5"}
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "3809"}, "freq": 3600,
   "signals": [
-    {"id": "Fiat_AVG_DIST_REGENS", "path": "Emissions", "fmt": { "len": 16, "max": 10000, "mul": 10, "unit": "kilometers" }, "name": "Distance between DPF regens (last 5 average)"}
+    {"id": "Fiat_AVG_DIST_REGENS", "path": "Emissions", "fmt": { "len": 16, "max": 10000, "mul": 10, "unit": "kilometers" }, "name": "Distance between particulate filter regenerations, average of the last 5"}
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "380A"}, "freq": 3600,
   "signals": [
-    {"id": "Fiat_AVG_REGEN_DUR", "path": "Emissions", "fmt": { "len": 16, "max": 30, "div": 60, "unit": "minutes" }, "name": "DPF regen duration (last 5 average)"}
+    {"id": "Fiat_AVG_REGEN_DUR", "path": "Emissions", "fmt": { "len": 16, "max": 30, "div": 60, "unit": "minutes" }, "name": "Particulate filter regen duration, average of the last 5"}
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "380B"}, "freq": 5,
   "signals": [
-    {"id": "Fiat_REGEN_PROGRESS", "path": "Emissions", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 65535, "unit": "percent" }, "name": "DPF regen progress"}
+    {"id": "Fiat_REGEN_PROGRESS", "path": "Emissions", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 65535, "unit": "percent" }, "name": "Particulate filter regen progress"}
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "3813"}, "freq": 3600,
   "signals": [
@@ -2695,7 +2732,7 @@
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "3912"}, "freq": 3600,
   "signals": [
-    {"id": "Fiat_REGEN_COMPLETED", "path": "Emissions", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Total DPF regenerations completed"}
+    {"id": "Fiat_REGEN_SUCCESSFULY", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Regenerations successfuly completed total counter"}
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "3914"}, "freq": 5,
   "signals": [
@@ -2703,7 +2740,7 @@
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "3915"}, "freq": 5,
   "signals": [
-    {"id": "Fiat_DPF_OUTLET_T", "path": "Emissions", "fmt": { "len": 16, "max": 900, "min": -40, "mul": 2, "div": 100, "add": -40, "unit": "celsius" }, "name": "DPF outlet temperature"}
+    {"id": "Fiat_DPF_OUTLET_T", "path": "Emissions", "fmt": { "len": 16, "max": 900, "min": -40, "mul": 2, "div": 100, "add": -40, "unit": "celsius" }, "name": "Particulate filter outlet temperature"}
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "3917"}, "freq": 5,
   "signals": [
@@ -2723,28 +2760,28 @@
   ]},
 { "hdr": "DA18", "dbg": true, "cmd": {"22": "1D09"}, "freq": 1,
   "signals": [
-    {"id": "Fiat_ATF_T_DA18", "path": "Transmission", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "Automatic transmission temperature", "suggestedMetric": "transmissionFluidTemperature"}
+    {"id": "Fiat_ATF_T", "path": "Transmission", "fmt": { "len": 8, "max": 205, "min": -50, "add": -50, "unit": "celsius" }, "name": "Automatic transmission temperature", "suggestedMetric": "transmissionFluidTemperature"}
   ]},
 { "hdr": "DA18", "dbg": true, "cmd": {"22": "1D12"}, "freq": 1,
   "signals": [
-    {"id": "Fiat_GEAR_V2", "path": "Transmission", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Gear"}
+    {"id": "Fiat_GEAR", "path": "Transmission", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Gear"}
   ]},
 { "hdr": "DA18", "rax": "18", "dbg": true, "cmd": {"22": "04FE"}, "freq": 5,
   "signals": [
-    {"id": "Fiat_ATF_T_V2",     "path": "Transmission", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature"},
-    {"id": "Fiat_ATF_T_4THGEN", "path": "Transmission", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature", "suggestedMetric": "transmissionFluidTemperature"}
+    {"id": "Fiat_ATF_T_4THGEN", "path": "Transmission", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature", "suggestedMetric": "transmissionFluidTemperature"},
+    {"id": "Fiat_ATF_T_V2",     "path": "Transmission", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature"}
   ]},
-{ "hdr": "DA18", "rax": "18", "dbg": true, "cmd": {"22": "051A"}, "freq": 0.25,
+{ "hdr": "DA18", "rax": "18", "dbg": true, "cmd": {"22": "051A"}, "freq": 1,
   "signals": [
-    {"id": "Fiat_GEAR_RAW_CNT", "path": "Transmission", "fmt": {          "len": 8, "max": 255, "unit": "scalar" }, "name": "Gear, raw count"},
     {"id": "Fiat_GEAR_DESIRED", "path": "Transmission", "fmt": {          "len": 4, "max": 15,  "unit": "scalar" }, "name": "Desired gear"},
+    {"id": "Fiat_GEAR_RAW_CNT", "path": "Transmission", "fmt": {          "len": 8, "max": 255, "unit": "scalar" }, "name": "Gear, raw count"},
     {"id": "Fiat_GEAR_CURRENT", "path": "Transmission", "fmt": {"bix": 4, "len": 4, "max": 15,  "unit": "scalar" }, "name": "Current gear"}
   ]},
 { "hdr": "DA18", "rax": "18", "dbg": true, "cmd": {"22": "1018"}, "freq": 2,
   "signals": [
-    {"id": "Fiat_TCM_TORQUE", "path": "Transmission", "fmt": { "len": 16, "max": 1000, "min": -500, "add": -500, "unit": "newtonMeters" }, "name": "Transmission-reported torque"}
+    {"id": "Fiat_TCM_TORQUE", "path": "Transmission", "fmt": { "len": 16, "max": 1000, "min": -500, "add": -500, "unit": "newtonMeters" }, "name": "Torque reported by the transmission"}
   ]},
-{ "hdr": "DA18", "rax": "18", "dbg": true, "cmd": {"22": "2024"}, "freq": 86400,
+{ "hdr": "DA18", "rax": "18", "fcm1": true, "dbg": true, "cmd": {"22": "2024"}, "freq": 86400,
   "signals": [
     {"id": "Fiat_TIRE_SIZE", "path": "Tires", "fmt": {"bix": 64, "len": 16, "max": 65535, "unit": "millimeters" }, "name": "Tire size"}
   ]},
@@ -2754,19 +2791,19 @@
   ]},
 { "hdr": "DA18", "rax": "18", "dbg": true, "cmd": {"22": "2B1B"}, "freq": 1,
   "signals": [
-    {"id": "Fiat_WSS_RR", "path": "Movement", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Rear right wheel speed, raw count"}
+    {"id": "Fiat_WSS_RR", "path": "Movement", "fmt": { "len": 16, "max": 300, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"}
   ]},
 { "hdr": "DA18", "rax": "18", "dbg": true, "cmd": {"22": "2B1C"}, "freq": 1,
   "signals": [
-    {"id": "Fiat_WSS_RL", "path": "Movement", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Rear left wheel speed, raw count"}
+    {"id": "Fiat_WSS_RL", "path": "Movement", "fmt": { "len": 16, "max": 300, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"}
   ]},
 { "hdr": "DA18", "rax": "18", "dbg": true, "cmd": {"22": "2B1D"}, "freq": 1,
   "signals": [
-    {"id": "Fiat_WSS_FR", "path": "Movement", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Front right wheel speed, raw count"}
+    {"id": "Fiat_WSS_FR", "path": "Movement", "fmt": { "len": 16, "max": 300, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"}
   ]},
 { "hdr": "DA18", "rax": "18", "dbg": true, "cmd": {"22": "2B1E"}, "freq": 1,
   "signals": [
-    {"id": "Fiat_WSS_FL", "path": "Movement", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Front left wheel speed, raw count"}
+    {"id": "Fiat_WSS_FL", "path": "Movement", "fmt": { "len": 16, "max": 300, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"}
   ]},
 { "hdr": "DA18", "rax": "18", "dbg": true, "cmd": {"22": "F158"}, "freq": 86400,
   "signals": [
@@ -2787,8 +2824,8 @@
   ]},
 { "hdr": "DA40", "rax": "40", "dbg": true, "cmd": {"22": "1004"}, "freq": 30,
   "signals": [
-    {"id": "Fiat_BCM_BAT_V",  "path": "Battery", "fmt": { "len": 8, "max": 25.5, "div": 10, "unit": "volts" }, "name": "Battery voltage, BCM",           "suggestedMetric": "starterBatteryVoltage"},
-    {"id": "Fiat_BATT_V_BCM", "path": "Battery", "fmt": { "len": 8, "max": 51,   "div": 5,  "unit": "volts" }, "name": "Battery voltage, body computer", "suggestedMetric": "starterBatteryVoltage"}
+    {"id": "Fiat_BATT_V_BCM", "path": "Battery", "fmt": { "len": 8, "max": 25,   "div": 10, "unit": "volts" }, "name": "Battery voltage, BCM"},
+    {"id": "Fiat_BCM_BAT_V",  "path": "Battery", "fmt": { "len": 8, "max": 25.5, "div": 10, "unit": "volts" }, "name": "Battery voltage, BCM", "suggestedMetric": "starterBatteryVoltage"}
   ]},
 { "hdr": "DA42", "rax": "42", "dbg": true, "cmd": {"22": "019E"}, "freq": 5,
   "signals": [
